@@ -1,0 +1,120 @@
+.section3 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  opacity: 0; /* Começa invisível */
+  transition: opacity 1s ease; /* Adiciona uma transição suave de opacidade */
+  background-image: url('img/Guy.jpg');
+  background-size: cover; /* Cobrir toda a tela */
+  background-repeat: no-repeat; /* Não repetir a imagem */
+  background-attachment: fixed; /* Manter a imagem fixa enquanto rola */
+  background-position: center; /* Centralizar a imagem */
+}
+
+
+
+.section3.visible {
+  opacity: 1; /* Torna visível quando a seção está 50% visível na tela */
+}
+
+.section3 .overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.section3 .overlay-text h1 {
+  font-size: 60px;
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.551), 
+  0 0 10px rgba(255, 0, 0, 0.2), 
+  0 0 20px rgba(255, 0, 0, 0.2),
+  0 0 30px rgba(255, 0, 0, 0.2),
+  0 0 60px rgba(255, 0, 0, 0.2),
+  0 0 70px rgba(255, 0, 0, 0.2),
+  0 0 90px rgba(255, 0, 0, 0.2);
+  margin-bottom: 50px;
+}
+
+.pricing-tables {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.pricing-table {
+  text-align: center;
+  border: 2px solid #ff4d4d; /* Borda vermelha mais grossa */
+  border-radius: 20px; /* Borda mais arredondada */
+  margin: 30px;
+  background-color: transparent; /* Fundo escuro */
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(255, 77, 77, 0.5); /* Sombra vermelha */
+  transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave */
+}
+
+.pricing-table:hover {
+  transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+}
+
+.comparison-table {
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+.section3 h2 {
+  padding-bottom: 30px;
+}
+
+.section3 h1 {
+  color: red;
+}
+
+.comparison-table td {
+  padding: 8px;
+  color: #fff; /* Texto branco */
+}
+
+.price-container {
+  width: 150px; /* Largura fixa para os preços */
+}
+
+.price {
+  font-size: 2.0em; /* Aumenta o tamanho do preço */
+  font-weight: bold;
+  margin-top: 20px; /* Aumenta o espaço acima do preço */
+  color: #ff4d4d; /* Cor do preço em vermelho */
+}
+
+
+.eu-quero-btn {
+  background-color: #ff2121;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 0.6em;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.eu-quero-btn:hover {
+  background-color: #c10000;
+}
+
+/* Para telas menores que 768px (tamanho típico de dispositivos móveis) */
+@media screen and (max-width: 768px) {
+  .pricing-tables {
+    flex-direction: column; /* Altera a direção do flex container para empilhar os itens verticalmente */
+    align-items: center; /* Centraliza os itens horizontalmente */
+  }
+  
+  .pricing-table {
+    width: 80%; /* Define a largura da tabela para ocupar a largura total da tela */
+  }
+}
+
+

@@ -1,0 +1,160 @@
+/* Estilos base */
+.section5 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  opacity: 0; /* Começa invisível */
+  transition: opacity 1s ease; /* Adiciona uma transição suave de opacidade */
+  background: linear-gradient(to bottom, #070707, #161616);
+  background-image: url('img/Peso.jpg');
+  background-size: cover; /* Cobrir toda a tela */
+  background-repeat: no-repeat; /* Não repetir a imagem */
+  background-attachment: fixed; /* Manter a imagem fixa enquanto rola */
+  background-position: center; /* Centralizar a imagem */
+}
+
+.section5.visible {
+  opacity: 1; /* Torna visível quando a seção está 50% visível na tela */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  font-family: inherit;
+  gap: 10px;
+  padding-inline: 2em;
+  padding-bottom: 3em; /* Aumentei o padding-bottom para dar espaço para o botão */
+  background: linear-gradient(to bottom, #070707, #161616);
+  border-radius: 20px;
+  box-shadow: 1px 3px 20px rgb(218, 6, 6);
+  position: relative; /* Adicionado */
+}
+
+.form-heading {
+  text-align: center;
+  margin: 2em;
+  color: #ff6464;
+  font-size: 1.2em;
+  background-color: transparent;
+  align-self: center;
+}
+
+.form-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  border-radius: 10px;
+  padding: 0.6em;
+  border: none;
+  outline: none;
+  color: white;
+  height: 30px;
+  background-color: #000000;
+  box-shadow: inset 2px 5px 10px rgb(22, 0, 0);
+}
+
+.input-field {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #fff1f1;
+  padding-inline: 1em;
+}
+
+.sendMessage-btn {
+  cursor: pointer;
+  margin-top: auto; /* Para empurrar o botão para a parte inferior */
+  padding: 1em;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #ff3d3d;
+  font-weight: bold;
+  outline: 1px solid #ff3939;
+  transition: all ease-in-out 0.3s;
+  width: 50%;
+  align-self: center; /* Centralizando horizontalmente */
+}
+
+.sendMessage-btn:hover {
+  transition: all ease-in-out 0.3s;
+  background-color: #ff3f3f;
+  color: #000;
+  cursor: pointer;
+  box-shadow: inset 2px 5px 10px rgb(50, 0, 0);
+}
+
+.form-card1 {
+  background-image: linear-gradient(163deg, #ff0000 0%, #ff6464 100%);
+  border-radius: 22px;
+  transition: all 0.3s;
+  width: 40%;
+  left: 30%;
+  top: 30%;
+  position: absolute;
+}
+
+.form-card1:hover {
+  box-shadow: 0px 0px 30px 1px rgba(255, 100, 100, 0.3);
+}
+
+.form-card2 {
+  border-radius: 0;
+  transition: all 0.2s;
+}
+
+.form-card2:hover {
+  transform: scale(0.98);
+  border-radius: 20px;
+}
+
+.section5 h1 {
+  color: red;
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  font-size: 40px;
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.551), 
+  0 0 10px rgba(255, 0, 0, 0.2), 
+  0 0 20px rgba(255, 0, 0, 0.2),
+  0 0 30px rgba(255, 0, 0, 0.2),
+  0 0 60px rgba(255, 0, 0, 0.2),
+  0 0 70px rgba(255, 0, 0, 0.2),
+  0 0 90px rgba(255, 0, 0, 0.2);
+}
+
+/* Media Queries para tornar o layout responsivo */
+@media screen and (max-width: 768px) {
+  .form {
+    width: 80%; /* Reduzindo a largura do formulário em telas menores */
+  }
+
+  .sendMessage-btn {
+    width: 80%; /* Reduzindo a largura do botão de enviar em telas menores */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .form {
+    width: 90%; /* Reduzindo ainda mais a largura do formulário em telas muito pequenas */
+  }
+
+  .sendMessage-btn {
+    width: 90%; /* Reduzindo ainda mais a largura do botão de enviar em telas muito pequenas */
+  }
+
+  .section5 h1 {
+    padding-top: 100px; /* Ajustando o espaçamento superior do título em telas muito pequenas */
+    padding-bottom: 50px; /* Ajustando o espaçamento inferior do título em telas muito pequenas */
+    font-size: 30px; /* Reduzindo o tamanho da fonte do título em telas muito pequenas */
+  }
+
+  .form-card1 {
+    width: 70%;
+    left: 10%;
+  }
+}

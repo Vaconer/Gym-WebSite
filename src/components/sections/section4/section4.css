@@ -1,0 +1,89 @@
+.section4 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  opacity: 0; /* Começa invisível */
+  transition: opacity 1s ease; /* Adiciona uma transição suave de opacidade */
+  background: rgb(5, 5, 5);
+}
+
+.section4.visible {
+  opacity: 1; /* Torna visível quando a seção está 50% visível na tela */
+}
+
+.section4 .overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 70%; /* Posição do texto ajustada para a esquerda */
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: justify;
+  width: 40%;
+}
+
+.section4 .botao {
+  background-color: rgb(202, 0, 0);
+  color: white;
+  border-radius: 10%;
+}
+
+.section4 .overlay-text h1 {
+  font-size: 60px;
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.551), 
+  0 0 10px rgba(255, 0, 0, 0.2), 
+  0 0 20px rgba(255, 0, 0, 0.2),
+  0 0 30px rgba(255, 0, 0, 0.2),
+  0 0 60px rgba(255, 0, 0, 0.2),
+  0 0 70px rgba(255, 0, 0, 0.2),
+  0 0 90px rgba(255, 0, 0, 0.2);
+  color: rgb(206, 0, 0);
+  margin-bottom: 50px;
+}
+
+.section4 .overlay-text p {
+  font-size: 1.1rem; /* Tamanho do texto */
+  color: #cccccc; /* Cor do texto */
+  margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+.section4 .woman-image {
+  position: absolute;
+  width: 600px; /* Defina o tamanho máximo desejado */
+  height: 400px; /* Isso mantém a proporção da imagem */
+  border-radius: 10%;
+  top: 30%;
+  left: 5%; /* Posição da imagem ajustada para a direita */
+  box-shadow: 10px 10px 20px rgba(255, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 1036px) {
+  .section4 .overlay-text {
+    width: 80%; /* Largura ajustada para telas menores */
+    left: 50%; /* Posição ajustada para o canto esquerdo */
+  }
+
+  .section4 .woman-image {
+    width: 60%; /* Largura ajustada para telas menores */
+    height: 30%;
+    margin-top: 5vh; /* Espaço entre a imagem e o texto para telas menores */
+    top: 60%;
+    left: 20%; /* Posição ajustada para o canto esquerdo */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section4 .overlay-text {
+    width: 80%; /* Largura ajustada para telas muito pequenas */
+    left: 50%; /* Posição ajustada para o canto esquerdo */
+    
+  }
+
+  .section4 .woman-image {
+    padding-top: 30px;
+    width: 90%; /* Largura ajustada para telas muito pequenas */
+    height: 35%;
+    margin-top: 3vh; /* Espaço entre a imagem e o texto para telas muito pequenas */
+    top: 75%;
+    left: 5%; /* Posição ajustada para o canto esquerdo */
+  }
+}

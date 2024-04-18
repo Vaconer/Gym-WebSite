@@ -1,0 +1,70 @@
+/* header.css */
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: transparent;
+  color: #fff;
+  padding: 20px 0 0 0;
+  backdrop-filter: blur(3px);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 150px;
+}
+
+.red {
+  color: red;
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+.nav-item a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  position: relative;
+}
+
+.nav-item a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 1px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.nav-item.active a::after {
+  background-color: rgb(193, 11, 11);
+}
+
+.nav-itens {
+  padding-right: 10%;
+}
+
+.logo-name {
+  font-size: 2.5rem;
+}
+
+/* Estilos para resoluções de celular */
+@media (max-width: 768px) {
+  .menu-button {
+    display: block;
+  }
+
+  .nav-itens {
+    display: none;
+  }
+}

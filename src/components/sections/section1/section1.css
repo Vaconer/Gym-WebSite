@@ -1,0 +1,63 @@
+.section1 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    opacity: 0; /* Começa com opacidade 0 para o fade in */
+    transition: opacity 1s ease; /* Adiciona uma transição suave de opacidade */
+  }
+
+  .section1.fadeInOut {
+    opacity: 1; /* Opacidade total para o fade in */
+  }
+  
+  .section1 img {
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+  }
+
+  .section1 .overlay-text {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    text-align: center; 
+    color: #fff;
+    text-shadow: 20px 3px 20px rgba(0, 0, 0, 2);
+  }
+  
+  .section1 .overlay-text h1 {
+    font-size: 6rem;
+    color: rgb(225, 57, 31);
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.551), 
+  0 0 10px rgba(255, 0, 0, 0.2), 
+  0 0 20px rgba(255, 0, 0, 0.2),
+  0 0 30px rgba(255, 0, 0, 0.2),
+  0 0 60px rgba(255, 0, 0, 0.2),
+  0 0 70px rgba(255, 0, 0, 0.2),
+  0 0 90px rgba(255, 0, 0, 0.2);
+  }
+  
+  .section1 .overlay-text p {
+    font-size: 2rem; 
+    text-shadow: 20px 3px 20px rgba(0, 0, 0, 2);
+  }
+
+  @media (max-width: 768px) {
+    .section1 .feature-text {
+      font-size: 3vw; /* ajuste o tamanho da fonte para telas menores */
+    }
+    .section1 .overlay-text h1 {
+      font-size: 75px; /* Reduzindo o tamanho do h1 para telas menores */
+    }
+  }
+  
+  
+  
