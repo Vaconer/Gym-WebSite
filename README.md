@@ -8,6 +8,8 @@ O site da Academia Fitness é uma plataforma moderna e responsiva que visa propo
 
 <img src="https://s2.ezgif.com/tmp/ezgif-2-a163785542.gif" alt="Portfólio" width="500" heigh='400' style="border-radius: 10px;">
 
+[Gym WebSite](https://main--react-gym-site.netlify.app)
+
 ## Funcionalidades Principais
 
 - **Página Inicial**: Uma introdução à academia com imagens atraentes e chamadas para ação claras para explorar os serviços.
