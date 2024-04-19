@@ -11,7 +11,7 @@ O site da Academia Fitness é uma plataforma moderna e responsiva que visa propo
 - **Página Inicial**: Uma introdução à academia com imagens atraentes e chamadas para ação claras para explorar os serviços.
 - **Serviços**: Uma lista dos serviços oferecidos pela academia, com descrições detalhadas de cada um.
 - **Ofertas**: Uma listagem dos planos disponíveis para se cadastrar na academia.
-- - **Sobre**: Uma seção que fornece informações detalhadas sobre a academia, sua missão, história e equipe.
+- **Sobre**: Uma seção que fornece informações detalhadas sobre a academia, sua missão, história e equipe.
 - **Contato**: Formulário de contato para facilitar a comunicação entre a academia e os visitantes interessados.
 - **Responsividade**: O site é totalmente responsivo, garantindo uma experiência consistente em dispositivos móveis, tablets e desktops.
 
