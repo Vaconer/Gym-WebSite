@@ -6,7 +6,7 @@ Bem-vindo ao repositório do site da Academia Fitness! Este projeto é um site r
 
 O site da Academia Fitness é uma plataforma moderna e responsiva que visa proporcionar uma experiência de usuário intuitiva e agradável para os visitantes. Com um design atrativo e funcionalidades cuidadosamente implementadas, nosso objetivo é apresentar os serviços e instalações da academia de forma eficaz e atrair novos clientes.
 
-<img src="https://s2.ezgif.com/tmp/ezgif-2-a163785542.gif" alt="Portfólio" width="500" heigh='400' style="border-radius: 10px;">
+![ezgif-6-04e9ad6cde](https://github.com/Vaconer/Vaconer/assets/106969683/8cf02074-4f19-463a-ad32-68386fd3568b)
 
 [Gym WebSite](https://main--react-gym-site.netlify.app)
 
